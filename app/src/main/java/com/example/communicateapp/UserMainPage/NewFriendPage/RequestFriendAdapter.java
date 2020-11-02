@@ -62,7 +62,7 @@ public class RequestFriendAdapter extends RecyclerView.Adapter<RequestFriendAdap
         // 名字
         String requestUserName = friendRequest.getUsername();
         holder.request_username.setText(requestUserName);
-
+        
         //头像
         String bitStr = friendRequest.getHeadPhoto();
         Bitmap bitmap = BitmapUtil.getBitmapUtilInstance().StringToBitmap(bitStr);
