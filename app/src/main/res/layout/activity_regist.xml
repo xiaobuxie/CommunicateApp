@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistPage.RegistActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="注册你的用户"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150sp"
+                android:text="用户id"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/regist_userid"
+                android:layout_width="match_parent"
+                android:hint="请输入注册用户账号"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150sp"
+                android:text="用户密码"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/regist_password"
+                android:layout_width="match_parent"
+                android:hint="请输入注册用户密码"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150sp"
+                android:text="用户昵称"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/regist_username"
+                android:layout_width="match_parent"
+                android:hint="请输入注册用户昵称"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="请选择你的头像"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/regist_chos_headphoto"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="字体颜色"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/chat_text_color_view"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <Spinner
+                android:id="@+id/chat_text_color_spinner"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:spinnerMode="dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="气泡颜色"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:id="@+id/chat_background_color_view"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <Spinner
+                android:id="@+id/chat_background_color_spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="right"
+                android:spinnerMode="dialog"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="边框颜色"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:id="@+id/chat_border_color_view"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <Spinner
+                android:id="@+id/chat_border_color_spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:spinnerMode="dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+        <Button
+            android:id="@+id/regist_send_button"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="点击注册"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
